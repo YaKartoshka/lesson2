@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+header {
+    background-color: rgba(26, 22, 49, 0.78);
+    padding: 20px;
+    text-align: center;
+    
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0% auto;
+}
+
+.main-section{
+    background-image: url("images/fonn1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: rgba(25,26,47,.78);
+    width: 80%;
+    margin: 150px auto;
+    padding: 25px;
+}
+
+.seasons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+.season {
+    width: 270px;
+}
+
+.season img{
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: blueviolet;
+}
+
+.fact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.facts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+@media (max-width: 900px) {
+    .seasons {
+        justify-content: center;
+        gap: 15px;
+    }
+    .season {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .season {
+        max-width: 100%;
+    }
+    .container {
+        margin: 50px auto;
+        padding: 15px;
+    }
+}
